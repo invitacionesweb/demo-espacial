@@ -19,7 +19,7 @@
                 <img src="./img/icon-1.png" alt="">
                 <h1>JUAN</h1>
                 <H2>CUMPLE UNO</H2>
-                <a class="boton" target="_blank"  href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTVjcmttanJxcmg0bHNmM2hzaWtxc2RocnQgaW52aXRhY2lvbmVzd2ViLmluZm9AbQ&tmsrc=invitacionesweb.info%40gmail.com">AGENDAR</a>    
+                <a class="boton" target="_blank"  href="http://evt.to/adsdshshw">AGENDAR</a>    
             </div>
        </div>
     </header>
@@ -28,6 +28,13 @@
         <div id="clock"></div>
         <script src="countdown.js"></script>
     </div>
+
+    <div id="scroll-to-top">
+      <a href="#inicio">
+        <img src="./img/icono-flecha.png" alt="Volver al inicio">
+      </a>
+    </div>
+
     <div class="galeria">
         <img class="f1" src="./img/img1.png" alt="Juanci">
         <img class="f1" src="./img/img2.png" alt="Juanci">
@@ -39,14 +46,9 @@
     </div> 
     <main>
         <div class="main-bloque">
-            <img src="./img/icon-1.png" alt="">
-            <p>TE ESPERAMOS PARA CELEBRAR MI BAUTISMO EL 11 DE OCTUBRE EN LA PARROQUIA <strong>SAN MARTIN DE TOURS</strong>, A LAS 11:00 HS, HACE CLICK PARA SABER COMO LLEGAR</p>
-            <a class="boton2" target="_blank"  href="https://www.google.com/maps/dir//Parroquia+San+Mart%C3%ADn+de+Tours,+San+Mart%C3%ADn+de+Tours+2949,+C1425DNC+C1425DNC,+Buenos+Aires/@-34.5781405,-58.4039443,17z/data=!4m16!1m6!3m5!1s0x95bcb5649216c7d9:0x268469bdecaa9bc3!2sParroquia+San+Mart%C3%ADn+de+Tours!8m2!3d-34.5781638!4d-58.4039132!4m8!1m0!1m5!1m1!1s0x95bcb5649216c7d9:0x268469bdecaa9bc3!2m2!1d-58.4039132!2d-34.5781638!3e3">COMO LLEGAR</a>    
-        </div>
-        <div class="main-bloque">
             <img src="./img/icon-3.png" alt="">
-            <p>LUEGO DE LA CEREMONIA FESTEJAREMOS EN EL SALÓN <strong>BLER EVENTOS</strong>, A PARTIR DE LAS 12:30 HS, HACE CLICK PARA SABER COMO LLEGAR</p>
-            <a class="boton2" target="_blank"  href="https://www.google.com/maps/dir//Cr%C3%A1mer+1106,+Buenos+Aires/@-34.5719979,-58.4510868,17z/data=!4m17!1m7!3m6!1s0x95bcb5c4ae308bb1:0x7b2c5e21e292290c!2sCr%C3%A1mer+1106,+Buenos+Aires!3b1!8m2!3d-34.5719979!4d-58.4510868!4m8!1m0!1m5!1m1!1s0x95bcb5c4ae308bb1:0x7b2c5e21e292290c!2m2!1d-58.4510868!2d-34.5719979!3e3">COMO LLEGAR</a>    
+            <p>TE ESPERO PARA CELEBRAR MI CUMPLE EL XX DE XXXXX EN XXXXXXX .<br>  A PARTIR DE LAS 12 HS. <br>  HACE CLICK PARA SABER COMO LLEGAR</p>
+            <a class="boton2" target="_blank"  href="https://www.google.com/maps/dir//Le+Parc+Figueroa+Alcorta,+Buenos+Aires/@-31.2008075,-64.4461976,10.96z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcb5653904678b:0x5eff5128c518698b!2m2!1d-58.405!2d-34.575722?entry=ttu">COMO LLEGAR</a>    
         </div>
   </main>
     <div class="galeria">
@@ -57,8 +59,8 @@
       </div>
       <div class="segundo"> 
         <img src="./img/icon-2.png" alt="">
-        <p>NO OLVIDES CONFIRMAR TU <br> ASISTENCIA CON MIS PAPIS</p>
-        <a class="boton2" target="_blank"  href="https://forms.gle/A8riE4iPSLswQTH4A">CONFIRMAR</a>  
+        <p>NO OLVIDES CONFIRMAR TU <br> ASISTENCIA CON MIS PAPIS ANTES DEL XXX DE XXXXXX</p>
+        <a class="boton2" target="_blank"  href="https://wa.link/g85aw1">CONFIRMAR</a>  
       </div>
       <div class="galeria">
         <img class="f3" src="./img/img1.png" alt="Juanci">
@@ -72,12 +74,20 @@
           </div>
           <div>
             <h2>JUAN</h2>
-            <H3>11.10.23</H3>
+            <H3>05.11.24</H3>
           </div>
           <div>
             <img class="espejo" src="./img/icon-1.png" alt="">
           </div>
       </div>
+
+      <div class="partedemo">
+        <p>Si te gusto esta demostración podes ...</p>
+        <a class="botondemo" href=“#>COMPRAR</a>
+        <a class="botondemo" href="https://voyinvitacionesweb.mitiendanube.com/cumpleanos/">VER MÁS</a>
+      </div>
+
+
       <footer>
         <div class="contenido">
           <div>
@@ -100,6 +110,54 @@
         </div>
         
      </footer>
+
+      
+<script>
+  // Espera a que se cargue el DOM
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.querySelector("#scroll-to-top");
+
+    scrollToTopBtn.addEventListener("click", () => {
+      // Comprueba la compatibilidad con "scroll-behavior"
+      if ("scrollBehavior" in document.documentElement.style) {
+        // Usa el desplazamiento suave del navegador
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      } else {
+        // Desplazamiento suave de respaldo para navegadores antiguos
+        scrollToTop(0, 600);
+      }
+    });
+
+    // Función de desplazamiento suave de respaldo para navegadores antiguos
+    function scrollToTop(to, duration) {
+      const start = window.scrollY || document.documentElement.scrollTop;
+      const change = to - start;
+      const increment = 20;
+      let currentTime = 0;
+
+      const animateScroll = function () {
+        currentTime += increment;
+        const val = Math.easeInOutQuad(currentTime, start, change, duration);
+        window.scrollTo(0, val);
+        if (currentTime < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
+
+      requestAnimationFrame(animateScroll);
+    }
+  });
+</script>
 
 </body>
 </html>
